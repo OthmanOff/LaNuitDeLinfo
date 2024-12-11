@@ -18,7 +18,7 @@ export default function Home() {
           <div>
             <p className="text-4xl">Race for water</p>
           </div>
-          <Button className="text-2xl">Commencer l &#39 Aventure</Button>
+          <Button className="text-2xl">Commencer l &apos Aventure</Button>
         </div>
       </div>
       <div className="h-screen">
