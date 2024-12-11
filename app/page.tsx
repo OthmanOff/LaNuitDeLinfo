@@ -1,24 +1,13 @@
 import { Button } from "@/components/ui/button";
-import Globe from "@/components/ui/globe";
+import { GlobeDemo } from "@/components/ui/globecomponent";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import SimpleSlide from "@/components/ui/Slide_title";
 
-export function GlobeDemo() {
-  return (
-    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden px-40 pb-40 pt-8 md:pb-60">
-      <span className="pointer-events-none whitespace-pre-wrap ">
-        Globe Loading
-      </span>
-      <Globe className="top-28" />
-    </div>
-  );
-}
 
 export default function Home() {
   return (
@@ -29,7 +18,7 @@ export default function Home() {
           <div>
             <p className="text-4xl">Race for water</p>
           </div>
-          <Button className="text-2xl">Commencer l'Aventure</Button>
+          <Button className="text-2xl">Commencer l&#39Aventure</Button>
         </div>
       </div>
       <div className="h-screen">

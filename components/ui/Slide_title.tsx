@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "@/components/ui/button"
 interface SimpleSlideProps {
   img: string; // URL de l'image
   text: string; // Texte à afficher
