@@ -8,10 +8,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import SimpleSlide from "@/components/ui/Slide_title";
-import Image from "./image.png";
 import React, { useRef } from "react";
 export default function Home() {
-  const section1Ref = useRef(null);
+  const section1Ref = useRef<null|HTMLDivElement>(null); 
   
   const handleScroll = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -31,7 +30,7 @@ export default function Home() {
               <p className="text-4xl">Race for water</p>
             </div>
             <Button onClick={handleScroll} className="text-2xl">
-              Commencer l'Aventure
+              Commencer l&apos;Aventure
             </Button>
           </div>
         </div>
@@ -40,7 +39,7 @@ export default function Home() {
             <CarouselContent>
               <CarouselItem>
                 <SimpleSlide
-                  img={Image}
+                  img="./image.png"
                   text="Arctique - Fonte des glaces"
                   w={200}
                   h={300}
