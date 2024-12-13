@@ -9,7 +9,7 @@ interface SimpleSlideProps {
 
 const SimpleSlide: React.FC<SimpleSlideProps> = ({ img, text, w = 500, h = 500 , }) => {
   return (
-    <div className="flex flex-col items-center justify-center text-center bg-[#7de3ec] w-full h-96 p-4 h-screen">
+    <div className="flex flex-col items-center justify-center text-center bg-[#7de3ec] w-full p-4 h-screen">
       <div
         className="flex justify-center items-center bg-cover bg-center"
         style={{
